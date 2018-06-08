@@ -9,7 +9,7 @@ class RptoBit extends Component{
         }
     }
     componentDidMount(){
-        var url ='https://blockchain.info/tobtc?currency=USD&value=500'
+        var url ='https://blockchain.info/tobtc?currency=USD&value=1'
         axios.get(url)
         .then((getapi)=>{
             console.log(getapi.data)
