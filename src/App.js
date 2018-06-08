@@ -15,18 +15,19 @@ import Home from './komponen/Home'
 class App extends Component {
   render() {
     return (
-      <div className='container all' >
-        <div className='row'>
-				<div className='col-lg-3'>
-          <div className='list-group mylist'>
-          <Link to ='/tabelharga' className="list-group-item">Tabel Harga Bitcoin </Link>
-          <Link to ='/RptoBit' className="list-group-item">Konversi Nilai RP ke BitCoin </Link>
-          <Link to ='/BittoRp' className="list-group-item">Konversi Nilai BitCoin ke Rupiah</Link>
+      <div className='col-md-12' >
+        <div className='col-md-12 row'>
+				<div className='col-md-3'>
+        <h1>List Bitcoin</h1>
+          <div className='list-group'>
+          <Link to ='/tabelharga' className="list-group-item"><center>Tabel Harga Bitcoin </center></Link>
+          <Link to ='/RptoBit' className="list-group-item"><center>Konversi Nilai RP ke BitCoin </center></Link>
+          <Link to ='/BittoRp' className="list-group-item"><center>Konversi Nilai BitCoin ke Rupiah</center></Link>
           </div>
            
         </div>
 
-        <div className='col-lg-9'>
+        <div className='col-md-9'>
           <Route exact path='/' component={Home} />
           <Route path='/tabelharga' component={Tabelharga} />
           <Route path='/RptoBit' component={RptoBit} />
